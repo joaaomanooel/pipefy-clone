@@ -5,7 +5,7 @@ import Card from '../Card';
 
 import { Container } from './styles';
 
-export default ({ data }) => {
+export default ({ data, index: listIndex }) => {
   return (
     <Container done={data.done}>
       <header>
@@ -18,7 +18,9 @@ export default ({ data }) => {
       </header>
 
       <ul>
-        {data.cards.map(card => (<Card key={card.id} data={card} />))}
+        {data.cards.map((card, i) => (
+          <Card key={card.id} index={i} listIndex={listIndex} data={card} />
+        ))}
       </ul>
     </Container>
   );
