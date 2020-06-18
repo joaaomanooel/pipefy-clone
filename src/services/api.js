@@ -88,7 +88,7 @@ export function loadLists() {
         },
         {
           id: 13,
-          content: 'Gravar Aula "Internacionalização de aplicações Node.js, ReactJS e React Native"',
+          content: 'Gravar Aula "Internacionalização de aplicações Node.js, ReactJS e React Native"', // eslint-disable-line max-len
           labels: ['#7159c1'],
         },
       ],
